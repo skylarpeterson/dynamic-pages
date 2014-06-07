@@ -1,0 +1,126 @@
+// Place all the styles related to the tabs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	font-family: Tahoma;
+	font-size: 13px;
+	padding-bottom: 4px;		
+}
+
+a {
+	color: inherit;
+	text-decoration: none;	
+}
+
+.tabs {
+	width: 100%;	
+}
+
+td {
+	color: black;
+	vertical-align: top;
+}
+
+td.normal {
+	white-space: nowrap;
+	padding-bottom: 3px;
+	border-bottom: solid 1px #cccccc;
+}
+
+td.abnormal {
+	white-space: nowrap;
+	padding: 0px;
+	padding-top: 1px;
+}
+
+td:hover {
+	color: #cc6600;
+	cursor: pointer;
+}
+
+#pageSpacer {
+	width: 99%;	
+	border-bottom: solid 1px #cccccc;
+}
+
+.spacer {
+	padding-right: 2px;
+	padding-left: 2px;
+	padding-top: 5px;
+}
+
+.leftDiv {
+	padding-left: 1.5px;
+	padding-right: 1.5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/left.gif');
+	background-repeat: no-repeat;
+}
+
+.rightDiv {
+	padding-left: 1.5px;
+	padding-right: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/right.gif');
+	background-repeat: no-repeat;
+}
+
+.tdDiv {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/mid.gif');
+	background-repeat: repeat-x;	
+}
+
+.leftSelected {
+	padding-left: 1.5px;
+	padding-right: 1.5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/left-selected.gif');
+	background-repeat: no-repeat;
+}
+
+.rightSelected {
+	padding-left: 1.5px;
+	padding-right: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/right-selected.gif');
+	background-repeat: no-repeat;
+}
+
+.selected {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	display: inline;
+	background-image: url('/images/mid-selected.gif');
+	background-repeat: repeat-x;
+	font-weight: bold;
+}
+
+.tabsCell {
+	padding-top: 10px;
+	margin: 10px;
+	width: 45%;
+}
+
+.left-tabs {
+	margin-right: 30px;	
+}
+
+.right-tabs {
+	margin-left: 30px;	
+}

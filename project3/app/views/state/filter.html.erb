@@ -1,0 +1,11 @@
+<div class="main">
+	<h2 class="contentTitle">
+		The states containing substring "<%= @substr %>" are:
+	</h2>
+	
+	<ul>
+	<%for value in @states %>
+		<li><p><%= value %></p></li>
+	<% end %>
+	</ul>
+</div>

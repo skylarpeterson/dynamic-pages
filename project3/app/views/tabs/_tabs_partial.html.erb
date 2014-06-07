@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"    lang="en">
+<head>
+  <title><%= @title %></title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag :tabs %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<table class="tabs" cellspacing="0">
+		<tr>
+			<% for value in arr %>
+				<td class="normal"><div class="spacer"></div></td>
+				<% if(value[:label] == selected) %>
+					<td class="abnormal">
+						<div class="tableCell">
+							<div class="leftSelected"></div>
+							<div class="selected"><a href=<%= value[:url] %>><%= value[:label] %></a></div>
+							<div class="rightSelected"></div>
+						</div>
+					</td>
+				<% else %>
+					<td class="normal">
+						<div class="tableCell">
+							<div class="leftDiv"></div>
+							<div class="tdDiv"><a href=<%= value[:url] %>><%= value[:label] %></a></div>
+							<div class="rightDiv"></div>
+						</div>
+					</td>
+				<% end %>
+			<% end %>
+			<td id="pageSpacer"><div></div></td>
+		</tr>
+	</table>
+</body>
+</html>
